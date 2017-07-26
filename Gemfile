@@ -19,7 +19,6 @@ source 'https://rubygems.org'
  gem 'coffee-rails'
  gem 'jquery-rails'
  gem 'turbolinks'
- gem 'bootstrap'
  gem 'figaro'
 
  group :development, :test do
@@ -32,3 +31,6 @@ source 'https://rubygems.org'
    gem 'pry-rails'
    gem 'rails-controller-testing'
  end
+
+ gem 'devise'
+ gem 'bootstrap-sass'
