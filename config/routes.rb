@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :users, only: [:show]
 
   get 'welcome/index'
 
@@ -7,5 +8,5 @@ Rails.application.routes.draw do
 
   get 'users/new'
 
-  root 'welcome#index'
+  root 'users#show'
 end
