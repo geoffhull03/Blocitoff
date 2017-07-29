@@ -25,7 +25,12 @@
        <li><%= link_to "About", welcome_about_path %></li>
      </ul>
 
+    <div class="container">
+       <% if notice %> <div class="alert alert-info"><%= notice %> </div> <% end %>
+       <% if alert %> <div class="alert alert-warning"><%= alert %> </div> <% end %>
+
      <%= yield %>
+ </div>
    </div>
  </body>
 </html>
