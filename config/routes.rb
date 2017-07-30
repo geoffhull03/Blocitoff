@@ -14,5 +14,7 @@ Rails.application.routes.draw do
 
   get 'items/create'
 
+  get 'users/id'
+
   root 'users#show'
 end
