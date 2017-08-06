@@ -1,6 +1,6 @@
 <% @users = User.all %>
 <% @users.each do |user| %>
 <ul>
-  <%=link_to user.email, %>
+  <%=link_to user.email %>
 </ul>
 <% end %>

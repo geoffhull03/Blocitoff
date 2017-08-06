@@ -1,5 +1,6 @@
-<tbody>
-  <tr>
-    <td><%= item.name %></td>
-  </tr>
-</tbody>
+<div class="media">
+    <div class="media-body" id="item-<%= item.id %>">
+        <%= item.name %>
+        <%= link_to "", user_item_path(@user, item), method: :delete, class: 'glyphicon glyphicon-ok' %>
+    </div>
+</div>

@@ -14,11 +14,7 @@
 <div class="container">
   <h4>Tasks that need to be completed:</h4>
   <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Description</th>
-      </tr>
-    </thead>
+  
     <% @items.each do |item| %>
       <%= render partial: 'items/item', locals: { item: item }%>
       <% end %>
