@@ -2,5 +2,6 @@
     <div class="media-body" id="item-<%= item.id %>">
         <%= item.name %>
         <%= link_to "", user_item_path(@user, item), method: :delete, class: 'glyphicon glyphicon-ok' %>
+        <h5>Time remaining: <%= distance_of_time_in_words(item.created_at + 7.days, Time.now) %></h2>
     </div>
 </div>
